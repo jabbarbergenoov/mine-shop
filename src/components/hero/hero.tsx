@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from "next/image";
 
 export default function Hero() {
     return (
@@ -6,9 +7,11 @@ export default function Hero() {
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           {/* Left Side (Image) */}
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-            <img
+          <Image
               className="object-cover object-center rounded-xl shadow-lg"
               alt="hero"
+              width={720}
+              height={600}  
               src="https://dummyimage.com/720x600"
             />
           </div>

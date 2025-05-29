@@ -37,6 +37,7 @@ interface Props {
 		)
 	} catch (error) {
 		notFound()
+		console.log(error)
 	}
 };
 
